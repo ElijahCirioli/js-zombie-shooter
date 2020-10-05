@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elijah Cirioli</title>
+    
+    <link href="/header-style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/code-style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#9a00c4">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#130f62">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    
+    <script src="/splash.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css">
+  </head>
+  <body>
+    <div id="header-wrap">
+      <div class="header-title">ZOMBIE SHOOTER</div>
+      <a class="header-logo" href="https://elijahcirioli.com"></a>
+    </div>
+    
+    <div id=nav-spacer></div>
+    <div id=nav-wrap class="nav-absolute">
+      <nav>
+        <ul class=navlist>
+          <li class=navitem><a class=navlink href="https://elijahcirioli.com">PORTFOLIO</a></li>
+          <li class=navitem><a class=navlink href="https://elijahcirioli.com/about/">ABOUT</a></li>
+          <li class=navitem><a class=navlink href="https://elijahcirioli.com/contact/">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class=content-title>
+      <b>Zombie Shooter Code</b>
+    </div>
+    <div class="code"><pre><code id=code class="language-javascript"></code></pre></div>
+      
+    <footer>
+      <p>©2019 Elijah Cirioli &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com">Portfolio</a> &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com/about/">About</a> &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com/contact/">Contact</a></p> 
+    </footer>
+    <script>
+      $("#code").load("./zombie.js", () => {Prism.highlightAll();});
+      
+      $(".prsm").ready(() => {Prism.highlightAll();});
+    </script>
+    
+    <script class="prsm" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js" data-manual></script>
+    <script class="prsm" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-javascript.min.js"></script>
+  </body>
+</html>

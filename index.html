@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elijah Cirioli</title>
+        
+    <link href="/page-style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/header-style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    
+    <script src="/splash.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <link rel="prefetch" as="image" href="./gunShot.png">
+    <div id="page-wrap">
+      <div id="header-wrap">
+        <div class="header-title">ZOMBIE SHOOTER</div>
+        <a class="header-logo" href="https://elijahcirioli.com"></a>
+      </div>
+      <div id=nav-spacer></div>
+      <div id=nav-wrap class="nav-absolute">
+        <nav>
+          <ul class=navlist>
+            <li class=navitem><a class=navlink href="https://elijahcirioli.com">PORTFOLIO</a></li>
+            <li class=navitem><a class=navlink href="https://elijahcirioli.com/about/">ABOUT</a></li>
+            <li class=navitem><a class=navlink href="https://elijahcirioli.com/contact/">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div id=canvasHolder>
+        <canvas id="myCanvas" width="800" height="550"></canvas>
+        <script src="./zombie.js"></script>
+        <audio src="http://feeds.soundcloud.com/stream/630596622-elijah-cirioli-zombie-shooter-music.mp3" autoplay loop></audio>
+      </div>
+      <div id="controls">
+        <p><b>Controls:</b></p><p>WASD - Move</p><p>Arrow keys - Move</p><p>Spacebar - Shoot</p><p>Shift - Sprint</p><p>R - Reload</p>
+      </div>
+      <footer>
+        <p>©2019 Elijah Cirioli &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com">Portfolio</a> &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com/about/">About</a> &nbsp;&nbsp;&nbsp; <a class=footer-link href="https://elijahcirioli.com/contact/">Contact</a></p> 
+      </footer>
+    </div>
+  </body>
+</html>
